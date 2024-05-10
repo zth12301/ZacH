@@ -8,6 +8,7 @@ import './index.css';
 import Home from './pages/home';
 import Resume from './pages/resume';
 import Contact from './pages/contact';
+import ErrorPage from './pages/error-page';
 
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage />
   },
   {
     path: "/resume",
