@@ -4,13 +4,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import './index.css';
 import Home from './pages/home';
 import Resume from './pages/resume';
 import Contact from './pages/contact';
 import ErrorPage from './pages/error-page';
+import Navbar from './components/Navbar';
 
-// import App from './App';
+import './index.css';
+
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -36,6 +37,7 @@ const router = createBrowserRouter([
 
 root.render(
   <React.StrictMode>
+    <Navbar />
     <RouterProvider router={router} />
   </React.StrictMode>
 );
