@@ -17,3 +17,8 @@ code {
   height: 100vh;
   background-color: blue;
 }
+
+.nav-wrapper {
+  position: absolute;
+  /* make centered */
+}
