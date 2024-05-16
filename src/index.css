@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
+/* Change background color from blue, just for testing rn
+  Also plan to implement dark and light mode, probably do through
+  use state? seems clunky though, look into better options */
 .page {
   width: 100vw;
   height: 100vh;
@@ -33,9 +36,32 @@ code {
   padding-bottom: 3px;
 }
 /* make into 3 buttons?
-  Home | Resume | Contact
+  Projects | Resume | Contact
   With vertical lines between */
 
 .nav-content {
   text-align: center;
 }
+
+/* Page Plans:
+    Home - general summary of me including generalized bit of resume, keep simple but don't leave the screen barren. Also have photo of self
+           Also have links to things in home.
+    Projects - List of projects w/ descriptions, what it was made with, and links
+    Resume - Try to link to something? figure out, better to do this than need to update manually every time
+    Contact - all contact info and other important links */
+
+/* Navigation:
+    Home - have my photo top right? maybe just house icon
+    Projects - navbar
+    Resume - navbar
+    Contact - navbar */
+
+/* Dark Mode:
+    Button in top left or right? always there, part of the "header" of the page */
+
+/* General look:
+    Don't want to copy other websites that I've seen but hard to come up with something purely original
+    Probably just put everything in a rectangle and have something going on in the background
+    Maybe a cool scroll effect but keep it subtle
+    
+    Plan for it to be intended to be dark mode, implement light mode later */
