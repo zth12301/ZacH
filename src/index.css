@@ -20,5 +20,22 @@ code {
 
 .nav-wrapper {
   position: absolute;
-  /* make centered */
+  margin: 0;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* give padding and such */
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+/* make into 3 buttons?
+  Home | Resume | Contact
+  With vertical lines between */
+
+.nav-content {
+  text-align: center;
 }
