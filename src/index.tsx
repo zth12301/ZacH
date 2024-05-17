@@ -21,23 +21,31 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <>
+              <Navbar />
+              <Home />
+            </>,
     errorElement: <ErrorPage />
   },
   {
     path: "/resume",
-    element: <Resume />,
+    element: <>
+              <Navbar />
+              <Resume />
+             </>,
   },
   {
     path: "/contact",
-    element: <Contact />,
+    element: <>
+              <Navbar /> 
+              <Contact />
+             </>,
   },
 ]);
 
 
 root.render(
   <React.StrictMode>
-    <Navbar />
     <RouterProvider router={router} />
   </React.StrictMode>
 );
