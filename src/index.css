@@ -98,4 +98,9 @@ code {
     Probably just put everything in a rectangle and have something going on in the background
     Maybe a cool scroll effect but keep it subtle
     
-    Plan for it to be intended to be dark mode, implement light mode later */
+    Plan for it to be intended to be dark mode, implement light mode later
+    
+    Maybe also just have each indiviual element be it's own box on a background.
+    If this, then no need for multiple different routes, able to just change the boxes.
+    Maybe even give it some transition.
+    Look into class examples for state management*/
