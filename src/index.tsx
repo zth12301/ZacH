@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  createBrowserRouter,
-  RouterProvider,
+  createHashRouter,
+  HashRouter,
+  Route,
+  Routes,
 } from "react-router-dom";
 import Home from './pages/home';
 import Resume from './pages/resume';
@@ -18,35 +20,55 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/",
+    path: "/#/ZacH",
     element: <>
               <Navbar />
               <Home />
             </>,
-    errorElement: <ErrorPage />
   },
   {
-    path: "/resume",
+    path: "/#/resume",
     element: <>
               <Navbar />
               <Resume />
              </>,
   },
   {
-    path: "/contact",
+    path: "/#/contact",
     element: <>
               <Navbar /> 
               <Contact />
              </>,
+  },
+  {
+    errorElement: <ErrorPage />
   },
 ]);
 
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HashRouter basename="/">
+      <Routes>
+        <Route path="/" errorElement={<ErrorPage/>} element={<>
+                                  <Navbar />
+                                  <Home />
+                                </>}/>
+
+        <Route path="/resume" errorElement={<ErrorPage/>} element={<>
+                                  <Navbar />
+                                  <Resume />
+                                </>}/>
+
+        <Route path="/contact" errorElement={<ErrorPage/>} element={<>
+                                        <Navbar />
+                                        <Contact />
+                                      </>}/>
+        <Route path="/*" element={<ErrorPage />}/>
+      </Routes>
+    </HashRouter>
   </React.StrictMode>
 );
 

@@ -19,7 +19,7 @@ code {
 .page {
   width: 100vw;
   height: 100vh;
-  background-color: blue;
+  background-color: black;
 }
 
 .background {
@@ -30,17 +30,18 @@ code {
 
 .nav-wrapper {
   position: absolute;
-  margin: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
   top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* give padding and such */
   background-color: white;
   border-radius: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  /* padding-top: 3px;
+  padding-bottom: 3px; */
 }
 /* make into 3 buttons?
   Projects | Resume | Contact
@@ -48,6 +49,47 @@ code {
 
 .nav-content {
   text-align: center;
+}
+
+.nav-link {
+  box-sizing: border-box;
+  /* height: calc(100% - 10px); */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.left-link {
+  border-radius: 10px 0 0 10px;
+  border-right-color: black;
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.middle-link {
+  border-radius: 0 0 0 0;
+  border-right-color: black;
+  border-right-style: solid;
+  border-right-width: 1px;
+
+  border-left-color: black;
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+.right-link {
+  border-radius: 0 10px 10px 0;
+  border-left-color: black;
+  border-left-style: solid;
+  border-left-width: 1px;
 }
 
 .face-wrapper {
