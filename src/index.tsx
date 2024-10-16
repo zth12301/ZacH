@@ -20,33 +20,6 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const router = createHashRouter([
-  {
-    path: "/#/ZacH",
-    element: <>
-              <Navbar />
-              <Home />
-            </>,
-  },
-  {
-    path: "/#/resume",
-    element: <>
-              <Navbar />
-              <Resume />
-             </>,
-  },
-  {
-    path: "/#/contact",
-    element: <>
-              <Navbar /> 
-              <Contact />
-             </>,
-  },
-  {
-    errorElement: <ErrorPage />
-  },
-]);
-
 
 root.render(
   <React.StrictMode>
