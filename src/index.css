@@ -13,22 +13,23 @@ code {
     monospace;
 }
 
-/* Change background color from blue, just for testing rn
-  Also plan to implement dark and light mode, probably do through
-  use state? seems clunky though, look into better options */
+
 .page {
-  width: 80vw;
-  margin-left: 10vw;
-  height: 100vh;
-  background-color: black;
-  position: fixed;
-  z-index: -1;
+  width: 70vw;
+  margin-left: 15vw;
+  min-height: 100vh;
+  background-color: rgb(59, 70, 91);
+  position: relative;
+  z-index: 1;
 }
 
 .background {
   width: 100vw;
   height: 100vh;
-  background-color: green;
+  background-color: rgb(114, 99, 168);
+  position: relative;
+  margin-top: -100vh;
+  z-index: -2;
 }
 
 
@@ -42,10 +43,9 @@ code {
   background-color: white;
   border-radius: 10px;
   margin: auto;
+  z-index: 2
 }
-/* make into 3 buttons?
-  Projects | Resume | Contact
-  With vertical lines between */
+
 
 .nav-content {
   text-align: center;
@@ -53,7 +53,6 @@ code {
 
 .nav-link {
   box-sizing: border-box;
-  /* height: calc(100% - 10px); */
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 3px;
@@ -65,7 +64,7 @@ code {
 
 .nav-link:hover {
   cursor: pointer;
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.667);
   color: white;
 }
 
@@ -95,26 +94,75 @@ code {
 }
 
 .face-wrapper {
-  /* position: absolute; */
-  width: 20vw;
+  /* position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(10%, -60%); */
+
+  width: 300px;
+  height: 300px;
+
   min-width: 200px;
-  /* add max-height and width */
-  height: 50vh;
-  min-height: 350px;
+  min-height: 200px;
+
+  max-height: 20vw;
+  max-width: 20vw;
+
   border-color: black;
   border-style: solid;
   overflow: hidden;
-  margin: 0;
-  top: 30%;
-  left: 70%;
-  transform: translate(-50%, -50%);
+  margin-left: 200px;
+
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .face {
-  max-height: 100%;
-  max-width: 100%;
-  position: inherit;
+  height: 380px;
+  width: 380px;
+  position: relative;
+  transform: translate(-15%, -15%)
 }
+
+.bio-box {
+
+  border-style: solid;
+  border-radius: 1px;
+  border-color: black;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+}
+
+.bio-text {
+  color: white;
+  /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; */
+  font-size: calc(max(2vw, 4vh));
+  z-index: 1;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.top-row-wrap {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 10vh;
+  left: 7.5vw;
+
+
+  border-style: solid;
+  border-radius: 1px;
+  border-color: green;
+}
+
 
 /* Page Plans:
     Home - general summary of me including generalized bit of resume, keep simple but don't leave the screen barren. Also have photo of self
