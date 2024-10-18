@@ -30,6 +30,7 @@ code {
   position: relative;
   margin-top: -100vh;
   z-index: -2;
+  background-repeat: repeat;
 }
 
 
@@ -64,7 +65,7 @@ code {
 
 .nav-link:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.667);
+  background-color: rgba(0, 0, 0, 0.862);
   color: white;
 }
 
@@ -94,10 +95,6 @@ code {
 }
 
 .face-wrapper {
-  /* position: absolute;
-  top: 30%;
-  left: 70%;
-  transform: translate(10%, -60%); */
 
   width: 300px;
   height: 300px;
@@ -111,7 +108,7 @@ code {
   border-color: black;
   border-style: solid;
   overflow: hidden;
-  margin-left: 200px;
+  margin-left: 5vw;
 
   border-radius: 100%;
   align-items: center;
@@ -122,7 +119,7 @@ code {
   height: 380px;
   width: 380px;
   position: relative;
-  transform: translate(-15%, -15%)
+  transform: translate(-12%, -12%)
 }
 
 .bio-box {
@@ -136,6 +133,7 @@ code {
   justify-content: center;
 
   margin: auto;
+  max-width: 35vw
 }
 
 .bio-text {

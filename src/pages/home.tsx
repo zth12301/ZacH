@@ -9,7 +9,7 @@ export default function Home() {
             <div className='top-row-wrap'>
                 <div className='bio-box'>
                     <p className='bio-text'>
-                        Zachary Hanczyc. UW CS Class of 2027
+                        Zachary Hanczyc. UW CS Class of 2027  
                     </p>
                 </div>
 
